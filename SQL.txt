@@ -1,0 +1,24 @@
+-- Crear la tabla
+CREATE TABLE Estudiantes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    edad INT,
+    ciudad VARCHAR(50)
+);
+
+-- Insertar registros
+INSERT INTO Estudiantes (nombre, edad, ciudad) VALUES 
+('Ana Gómez', 19, 'Bogotá'),
+('Luis Torres', 22, 'Medellín'),
+('Carlos Pérez', 21, 'Cali'),
+('María López', 18, 'Bogotá'),
+('Sofía Ramírez', 25, 'Medellín');
+
+-- Consultar todos los registros
+SELECT * FROM Estudiantes;
+
+SELECT * FROM Estudiantes
+WHERE ciudad = 'Bogotá';
+
+SELECT * FROM Estudiantes
+WHERE edad > 20;
